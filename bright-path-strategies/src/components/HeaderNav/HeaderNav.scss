@@ -25,16 +25,27 @@
     align-content: center;
     flex-wrap: wrap;
     margin-left: 1rem;
-    padding: 1rem;
+    padding: 0.25rem 1rem 0.25rem 1rem;
     width: 8vh !important;
     height: 8vh !important;
-    border-radius: 50%;
-    color: $site-green;
     border: 2px solid $site-green;
+    background-color: $site-green;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+
+    &:hover {
+      background-color: $site-yellow;
+    }
+
+    img {
+      width: 8vh !important;
+      height: 8vh !important;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      border-radius: 4px;
+    }
   }
 
   &-links-container {
-    color: red;
     width: 33vw;
     display: flex;
     justify-content: center;
@@ -63,7 +74,5 @@
         background-color: $site-green;
       }
     }
-
-    
   }
 }

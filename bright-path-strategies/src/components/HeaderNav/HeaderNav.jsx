@@ -1,5 +1,6 @@
 import React from "react";
 import "./HeaderNav.scss";
+import logo from '../../assets/images/logo.png';
 
 
 const HeaderNav = () => {
@@ -7,7 +8,11 @@ const HeaderNav = () => {
     <div className="headernav">
       {/* logo */}
       <div className="headernav-logo-container">
-        <a href="/"><span className="headernav-logo">LOGO</span></a>
+        <a href="/">
+          <span className="headernav-logo">
+            <img src={logo} alt="Logo"/>
+          </span>
+        </a>
       </div>
       {/* list of links central */}
       <div className="headernav-links-container">

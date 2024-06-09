@@ -1,6 +1,60 @@
 @import "../../variables";
 
-h1 {
+.aboutpage-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh !important;
+}
+
+.aboutpage-content {
   color: $site-green;
-  font-family: $font-primary;
+  font-family: $font-secondary;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  overflow-y: auto;
+  padding: 1rem 2rem;
+
+  &-heading {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 100px;
+    word-spacing: 2rem;
+    letter-spacing: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  &-desc {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    font-weight: 200;
+    justify-content: center;
+    width: 50%;
+    margin: 1rem 15rem 1rem 15rem;
+    height: 100% !important;
+
+    &-image-container {
+      margin-bottom: 2rem;
+      display: flex;
+      justify-self: center;
+      align-self: center;
+      img {
+        overflow: hidden;
+        border: 2px solid $site-green;
+        border-radius: 50%;
+      }
+    }
+
+    &-text {
+      display: flex;
+      flex-direction: column;
+      font-size: 20px;
+      font-weight: 200;
+    }
+  }
 }
