@@ -1,17 +1,17 @@
 import React from "react";
-import "./Home.scss";
+import "./Collaborators.scss";
 import HeaderNav from '../../components/HeaderNav/HeaderNav'
 import Footer from '../../components/Footer/Footer'
 
-const Home = () => {
+const Collaborators = () => {
   return (
     <>
       <HeaderNav/>
-      <h1 className="heading">Home content</h1>
+      <h1 className="heading">Collaborators content</h1>
       {/* page content - site name, linkedin button, project example */}
       <Footer/>
     </>
   )
 };
 
-export default Home;
+export default Collaborators;
