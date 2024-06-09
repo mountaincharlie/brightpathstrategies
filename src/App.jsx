@@ -13,16 +13,16 @@ function App() {
   return (
     <BrowserRouter basename={baseURL}>
       <Routes>
-        <Route path="/" element={<Home />} />
+        {/* <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/approach" element={<Approach />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/collaborators" element={<Collaborators />} />
-        {/* <Route path={`${baseURL}`} element={<Home />} />
+        <Route path="/collaborators" element={<Collaborators />} /> */}
+        <Route path={`${baseURL}`} element={<Home />} />
         <Route path={`${baseURL}about`} element={<About />} />
         <Route path={`${baseURL}approach`} element={<Approach />} />
         <Route path={`${baseURL}projects`} element={<Projects />} />
-        <Route path={`${baseURL}collaborators`} element={<Collaborators />} /> */}
+        <Route path={`${baseURL}collaborators`} element={<Collaborators />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </BrowserRouter>
