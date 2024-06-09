@@ -6,8 +6,11 @@ import Projects from "./pages/Projects/Projects";
 import Collaborators from "./pages/Collaborators/Collaborators";
 
 function App() {
-  const baseURL = import.meta.env.MODE === 'production' ? 'https://mountaincharlie.github.io/brightpathstrategies/' : '/';
-  console.log('mode: ', import.meta.env.MODE)
+  // const baseURL = import.meta.env.MODE === 'production' ? '/brightpathstrategies/' : '/';
+  // console.log('mode: ', import.meta.env.MODE)
+
+  const baseURL = import.meta.env.VITE_APP_BASE_URL;
+  console.log('baseURL: ', baseURL)
 
   return (
     <BrowserRouter basename={baseURL}>
