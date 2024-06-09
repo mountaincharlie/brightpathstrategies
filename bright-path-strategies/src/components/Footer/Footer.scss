@@ -1,0 +1,50 @@
+@import "../../variables";
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: $site-yellow;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  &-links-container {
+    padding-left: 0.5rem;
+  }
+
+  &-links {
+    display: flex;
+    flex-direction: row;
+    padding: 0 !important;
+    align-items: center;
+
+    li {
+      list-style-type: none !important;
+      display: flex;
+      align-items: center;
+    }
+
+    a {
+      color: $site-green;
+      text-decoration: none !important;
+      padding: 0.5rem;
+      border-radius: 4px;
+
+      &:hover {
+        color: $site-yellow;
+        background-color: $site-green;
+      }
+    }
+  }
+
+  &-copyright {
+    display: flex;
+    align-items: center;
+    color: $site-green;
+    font-size: small;
+    padding-right: 1rem;
+  }
+}

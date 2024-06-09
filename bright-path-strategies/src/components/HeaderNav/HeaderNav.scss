@@ -1,7 +1,69 @@
 @import "../../variables";
 
-.headernav-container{
-  background-color: $site-yellow ;
+.headernav {
+  background-color: $site-yellow;
   width: 100%;
-  height: 30vh;
+  height: 12vh;
+  min-height: 5rem;
+  display: flex;
+  flex-direction: row;
+
+  a {
+    text-decoration: none;
+  }
+
+  &-logo-container {
+    width: 33vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  &-logo {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-left: 1rem;
+    padding: 1rem;
+    width: 8vh !important;
+    height: 8vh !important;
+    border-radius: 50%;
+    color: $site-green;
+    border: 2px solid $site-green;
+  }
+
+  &-links-container {
+    color: red;
+    width: 33vw;
+    display: flex;
+    justify-content: center;
+  }
+
+  &-links {
+    display: flex;
+    flex-direction: row;
+    padding: 0 !important;
+    align-items: center;
+
+    li {
+      font-weight: 700;
+      list-style-type: none !important;
+      text-transform: uppercase;
+    }
+
+    a {
+      color: $site-green;
+      text-decoration: none !important;
+      padding: 0.5rem 1rem 0.5rem 1rem;
+      border-radius: 4px;
+
+      &:hover {
+        color: $site-yellow;
+        background-color: $site-green;
+      }
+    }
+
+    
+  }
 }
