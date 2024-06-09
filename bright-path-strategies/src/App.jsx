@@ -6,11 +6,9 @@ import Projects from "./pages/Projects/Projects";
 import Collaborators from "./pages/Collaborators/Collaborators";
 
 function App() {
-  // const baseURL = import.meta.env.MODE === 'production' ? '/brightpathstrategies/' : '/';
-  // console.log('mode: ', import.meta.env.MODE)
 
   const baseURL = import.meta.env.VITE_APP_BASE_URL;
-  console.log('baseURL: ', baseURL)
+  console.log('baseURL: ', import.meta.env.VITE_APP_BASE_URL)
 
   return (
     <BrowserRouter basename={baseURL}>
@@ -20,6 +18,11 @@ function App() {
         <Route path="/approach" element={<Approach />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/collaborators" element={<Collaborators />} />
+        {/* <Route path={`${baseURL}`} element={<Home />} />
+        <Route path={`${baseURL}about`} element={<About />} />
+        <Route path={`${baseURL}approach`} element={<Approach />} />
+        <Route path={`${baseURL}projects`} element={<Projects />} />
+        <Route path={`${baseURL}collaborators`} element={<Collaborators />} /> */}
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </BrowserRouter>
