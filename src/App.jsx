@@ -7,13 +7,13 @@ import Collaborators from "./pages/Collaborators/Collaborators";
 
 function App() {
 
-  const BASEURL = import.meta.env.VITE_APP_BASE_URL;
-  console.log('BASEURL: ', import.meta.env.VITE_APP_BASE_URL)
+  const baseURL = import.meta.env.VITE_APP_BASE_URL;
+  console.log('baseURL: ', import.meta.env.VITE_APP_BASE_URL)
 
   return (
-    <BrowserRouter basename={BASEURL}>
+    <BrowserRouter basename={baseURL}>
       <Routes>
-        <Route path={`${BASEURL}`} element={<Home />} />
+        <Route path={`${baseURL}`} element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/approach" element={<Approach />} />
         <Route path="/projects" element={<Projects />} />
